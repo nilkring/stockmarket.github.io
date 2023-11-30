@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+}
+
+
+body{
+    --text-light: rgba(243, 244, 246,0.9);
+    --primary-dark: rgba(55, 65, 81, 1);
+    --secondary-dark: rgba(55, 65, 81, 0.7);
+    --bg-light: rgba(243, 244, 246,0.3);
+    --bg-btn: rgb(75, 130, 3);
+    --marigold-color: #FAEB7D;
+    --paleaqua-color: #bcd4e6;
+    --ube-color: #8878c3;
+    background-color: var(--text-light);
+}
+
+body.dark{
+    --text-light : rgba(55, 65, 81, 1);
+    --primary-dark:rgba(243, 244, 246,1);
+    --secondary-dark: rgba(243, 244, 246,0.3);
+    --bg-btn: #FAEB7D;
+    --bg-light: rgba(45, 49, 54, 0.5);
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 320px));
+    row-gap: 2em;
+    column-gap: 3em;
+    margin: 3em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    gap: 1rem;
+}
+
+button {
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background-color:black;
+    background: var(--marigold-color)
+}
+
+textarea{
+    height: 8rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid black;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grind;
+    place-items: center;
+}
+
+.grid .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.grid .icon > span{
+    font-size: 4em;
+    color: var(--bg-btn);
+}
+
+.primary-dark{
+    color: var(--primary-dark);
+}
+
+.secondary-dark{
+    color: var(--ube-color);
+}
+
+.bg-light{
+    background-color: var(--bg-light);
+    box-shadow: 1px 5px 20px rgba(55, 65, 81, 0.1);
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    background-color: var(--marigold-color) 
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-dark);
+    border-radius: 50px;
+}
+
+input[type="checkbox"]:checked:before{
+    transform: translate(100%);
+}
+
+
+
